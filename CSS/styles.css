@@ -1,0 +1,157 @@
+:root {
+
+  --color-start: #dcdcdc;
+  --color-neutral-light: #d2d2d2;
+  --color-keys: #37474f;
+  --color-keys-light: #e5e5e5;
+  --font-size-large: 60px;
+  --font-size-medium: 20px;
+  --transition: all 0.2s ease-in-out;
+}
+
+/*    Main    */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+li,
+ol,
+ul {
+  padding: 0;
+  display: inline-block;
+}
+
+h2, .header {
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 1.3px 1.3px #000;
+  font-size: var(--font-size-large);
+  margin: 0;
+}
+
+button {
+  margin: 6px;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  color: var(--color-keys);
+  font-size: var(--font-size-medium);
+  background-color: var(--color-keys-light);
+  border-radius: 10px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  max-height: 900px;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  padding: 10px;
+}
+
+/*   Title   */
+
+.header {
+  color: var(--color-start);
+}
+
+/*   Phrase   */
+
+.letter {
+  font-size: var(--font-size-medium);
+  height: 65px;
+  width: 65px;
+  padding: 20px 1px 0 1px;
+  margin-right: 2px;
+  color: transparent;
+  background: var(--color-neutral-light);
+  border-radius: 5px;
+}
+
+.space {
+  width: 15px;
+}
+
+.show {
+  color: #000;
+  background-color: #76ce82;
+  transition: 0.5s ease-out;
+}
+
+/* Keyboard */
+
+.keyrow {
+  display: flex;
+  justify-content: center;
+}
+
+.chosen {
+  background: var(--color-neutral);
+  border-radius: 5px;
+  font-size: var(--font-size-medium);
+  color: #ffffff;
+}
+
+
+.btn {
+  padding: 8px;
+  margin: 50px auto;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(122, 122, 122);
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;  
+}
+
+.btn:active {
+  background-color: #37474f;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+
+/* Overlay */
+
+#overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-image: url(../images/Greyscaleletters.jpg);
+  background-size: cover; 
+}
+
+.title {
+  color: rgb(245, 243, 243); 
+}
+
